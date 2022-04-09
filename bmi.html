@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <h1>Test Vue</h1>
+    <div id="app">
+        <div class="form">
+            <span>Waga: </span>
+            <input type="number" v-model="zad6.weight" type="text">
+            <span>Wzrost:  </span>
+            <input type="number" v-model="zad6.height" type="text">
+            <span style="font-weight: 600;"></span> Twoje bmi: {{bmiValue}}
+        </div>
+    </div>
+
+    <!-- Import app -->
+    <script src="main.js"></script>
+    <!-- Mount app -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+</html>
+
+<style>
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+</style> 

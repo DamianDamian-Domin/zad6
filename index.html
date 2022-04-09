@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <h1>Test Vue</h1>
+    <div id="app">
+        <div class="paragon">
+        <span class="bold">Receipt</span>
+        <span>-----------------------------</span>
+        <span>Product: {{zad1.product}}</span>
+        <span>Unit Price: {{zad1.unit_price}}</span>
+        <span>Quantity: {{zad1.quantity}}</span>
+        <span>Ammount: {{zad1.ammount}}</span>
+        <span>Tax Rate: {{zad1.tax_rate}}</span>
+        <span>==================</span>
+        <span class="bold">Total: {{zad1.total}}</span>
+        </div>
+    </div>
+
+    <!-- Import app -->
+    <script src="main.js"></script>
+    <!-- Mount app -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+</html>
+
+<style>
+    .paragon {
+        display: flex;
+        flex-direction: column;
+    }
+    .bold {
+        font-weight: 600;
+    }
+</style> 

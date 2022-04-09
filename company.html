@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="wizytowka">
+            <span style="font-weight: 600;">{{zad2.title}}</span>
+            <span>{{zad2.adres}}</span>
+            <span>{{zad2.kod}}</span>
+            <span>{{zad2.telefon}}</span>
+            <span style="color: blue" >{{zad2.url}}</span>
+        </div>
+    </div>
+
+    <!-- Import app -->
+    <script src="main.js"></script>
+    <!-- Mount app -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+</html>
+
+<style>
+    .wizytowka {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 30rem;
+        height: 10rem;
+        border: 1px solid black;
+        padding: 2rem 5rem;
+
+    }
+</style> 
